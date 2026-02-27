@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="عرض شامل لإنجازات التنمية في شمال سيناء - مشاريع البنية التحتية والإسكان والتعليم والصحة والموارد المحلية">
+    <title>عرض إنجازات شمال سيناء</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="/css/map.css">
+    <link rel="stylesheet" href="/css/education-message.css">
+    
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body data-page="home">
+    <a href="#main-content" class="skip-link">الانتقال إلى المحتوى الرئيسي</a>
+    
+    <header class="site-header" role="banner">
+        <nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
+            <div class="main-nav__container">
+                <a href="/" class="main-nav__logo">
+                    <span class="logo-text">شمال سيناء</span>
+                </a>
+                
+                <button class="main-nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">فتح القائمة</span>
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="main-nav__menu" id="nav-menu">
+                    <li><a href="#main-content" class="main-nav__link main-nav__link--active">الرئيسية</a></li>
+                    <li><a href="#map-section" class="main-nav__link">الخريطة</a></li>
+                    <li><a href="#timeline" class="main-nav__link">الإنجازات</a></li>
+                    <li><a href="#categories" class="main-nav__link">المشاريع</a></li>
+                    <li><a href="#education-message" class="main-nav__link">أهمية التعليم</a></li>
+                </ul>
+                
+                <div class="main-nav__actions">
+                    <button class="search-toggle" aria-label="فتح البحث">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main-content" role="main">
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">إنجازات التنمية في شمال سيناء</h1>
+                <p class="hero__subtitle">رحلة تحول شاملة نحو مستقبل مزدهر</p>
+            </div>
+        </section>
+        
+        <section class="stats">
+            <div class="stats__container">
+                <div class="stat-card">
+                    <div class="stat-card__value">750+</div>
+                    <div class="stat-card__label">مليار جنيه استثمارات</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__value">92</div>
+                    <div class="stat-card__label">مشروع كهرباء</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__value">12,000</div>
+                    <div class="stat-card__label">وحدة سكنية</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__value">14,000+</div>
+                    <div class="stat-card__label">فدان مستصلح</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map-section" id="map-section">
+            <div class="map-section__container">
+                <h2 class="section-title">خريطة الإنجازات التنموية</h2>
+                <p class="section-subtitle">اضغط على العلامات لاستكشاف المشاريع في مختلف مناطق شمال سيناء</p>
+                <div id="achievements-map-container"></div>
+            </div>
+        </section>
+        
+        <section class="timeline" id="timeline">
+            <div class="timeline__container">
+                <h2 class="section-title">الإنجازات الرئيسية</h2>
+                <div class="timeline__controls">
+                    <button class="timeline__nav timeline__nav--prev" aria-label="الإنجاز السابق">
+                        →
+                    </button>
+                    <button class="timeline__nav timeline__nav--next" aria-label="الإنجاز التالي">
+                        ←
+                    </button>
+                </div>
+                <div class="timeline__track">
+                    <!-- Timeline items rendered by JavaScript -->
+                </div>
+                <div class="timeline__details">
+                    <!-- Selected achievement details -->
+                </div>
+            </div>
+        </section>
+        
+        <section class="categories" id="categories">
+            <div class="categories__container">
+                <h2 class="section-title">استكشف المشاريع</h2>
+                <div class="categories__grid">
+                    <div class="category-card" data-category="infrastructure">
+                        <img src="/assets/images/electricity-network.jpg" alt="البنية التحتية" class="category-card__image">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">البنية التحتية</h3>
+                            <p class="category-card__description">مشاريع الكهرباء والمياه والصرف الصحي</p>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="housing">
+                        <img src="/assets/images/تجمعات تنمويه.jpg" alt="الإسكان" class="category-card__image">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">الإسكان</h3>
+                            <p class="category-card__description">التجمعات التنموية والوحدات السكنية</p>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="transportation">
+                        <img src="/assets/images/ahmed-hamdi-tunnel.jpg" alt="النقل والطرق" class="category-card__image">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">النقل والطرق</h3>
+                            <p class="category-card__description">الطرق والأنفاق والجسور</p>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="education">
+                        <img src="/assets/images/schools.jpg" alt="التعليم" class="category-card__image">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">التعليم</h3>
+                            <p class="category-card__description">المدارس والمرافق التعليمية</p>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="healthcare">
+                        <img src="/assets/images/hospitals.jpg" alt="الصحة" class="category-card__image">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">الصحة</h3>
+                            <p class="category-card__description">المستشفيات والمراكز الطبية</p>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="agriculture">
+                        <img src="/assets/images/agriculture.jpg" alt="الزراعة" class="category-card__image">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">الزراعة</h3>
+                            <p class="category-card__description">استصلاح الأراضي والمشاريع الزراعية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="education-message" id="education-message">
+            <div class="education-message__container">
+                <div class="education-message__content">
+                    <div class="education-message__icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z" fill="currentColor" opacity="0.3"/>
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" fill="currentColor"/>
+                            <path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h2 class="education-message__title">التعليم هو أساس التنمية</h2>
+                    <p class="education-message__text">
+                        كل هذه الإنجازات العظيمة التي تشاهدها اليوم في شمال سيناء لم تكن لتتحقق لولا العلم والتعليم. 
+                        المهندسون الذين صمموا هذه المشاريع، والأطباء الذين يخدمون في المستشفيات، والمعلمون الذين يبنون العقول، 
+                        كلهم بدأوا رحلتهم من مقاعد الدراسة مثلك تماماً.
+                    </p>
+                    <div class="education-message__highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-card__icon">
+                                <span class="material-icons">menu_book</span>
+                            </div>
+                            <h3 class="highlight-card__title">اهتم بتعليمك</h3>
+                            <p class="highlight-card__text">كل درس تتعلمه اليوم هو لبنة في بناء مستقبلك ومستقبل وطنك</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-card__icon">
+                                <span class="material-icons">search</span>
+                            </div>
+                            <h3 class="highlight-card__title">استكشف المعرفة</h3>
+                            <p class="highlight-card__text">لا تتوقف عن السؤال والبحث، فالفضول هو بداية كل اكتشاف عظيم</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-card__icon">
+                                <span class="material-icons">lightbulb</span>
+                            </div>
+                            <h3 class="highlight-card__title">كن مبدعاً</h3>
+                            <p class="highlight-card__text">أنت قادر على تحقيق إنجازات أعظم من هذه، فقط آمن بنفسك واجتهد</p>
+                        </div>
+                    </div>
+                    <div class="education-message__quote">
+                        <p class="quote-text">"العلم نور والجهل ظلام، وبالعلم ترتقي الأمم وتزدهر الحضارات"</p>
+                    </div>
+                    <div class="education-message__cta">
+                        <p class="cta-text">أنت جيل المستقبل، وعلى أكتافك ستُبنى إنجازات أعظم!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer" role="contentinfo">
+        <div class="site-footer__container">
+            <p>&copy; 2026 عرض إنجازات شمال سيناء. جميع الحقوق محفوظة.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.9;">
+                تم التصميم والتطوير بواسطة: <strong>محمود مجدي سلمي</strong><br>
+                طالب بالصف الثالث الإعدادي - مدرسة 25 يناير الرسمية للغات بالعريش
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Image Gallery Modal -->
+    <div class="gallery-modal" id="gallery-modal" aria-hidden="true">
+        <div class="gallery-modal__overlay"></div>
+        <div class="gallery-modal__container">
+            <button class="gallery-modal__close" aria-label="إغلاق المعرض">×</button>
+            <button class="gallery-modal__prev" aria-label="الصورة السابقة">‹</button>
+            <button class="gallery-modal__next" aria-label="الصورة التالية">›</button>
+            <div class="gallery-modal__content">
+                <img src="" alt="" class="gallery-modal__image">
+                <div class="gallery-modal__info">
+                    <h3 class="gallery-modal__title"></h3>
+                    <p class="gallery-modal__description"></p>
+                </div>
+            </div>
+            <div class="gallery-modal__thumbnails"></div>
+        </div>
+    </div>
+    
+    <div class="search-overlay" id="search-overlay" aria-hidden="true">
+        <div class="search-overlay__container">
+            <form class="search-form" role="search">
+                <label for="search-input" class="sr-only">بحث</label>
+                <input 
+                    type="search" 
+                    id="search-input" 
+                    class="search-form__input"
+                    placeholder="ابحث عن المشاريع والموارد والإنجازات..."
+                    autocomplete="off"
+                >
+                <button type="submit" class="search-form__submit" aria-label="بحث">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+            <div class="search-results" id="search-results"></div>
+            <button class="search-overlay__close" aria-label="إغلاق البحث">×</button>
+        </div>
+    </div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
