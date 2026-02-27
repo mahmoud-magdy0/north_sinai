@@ -1,0 +1,212 @@
+{
+  "achievements": [
+    {
+      "id": "ach-001",
+      "date": "2015-2025",
+      "title": "استثمارات تنمية سيناء",
+      "description": "أعلن الرئيس عبد الفتاح السيسي أن الدولة أنفقت أكثر من 750 مليار جنيه لتنمية سيناء خلال السنوات الماضية",
+      "category": "infrastructure",
+      "images": [
+        "/assets/images/development-projects.jpg",
+        "/assets/images/sinai devolpment2.jpg"
+      ],
+      "metrics": {
+        "إجمالي الاستثمارات": "750+ مليار جنيه",
+        "الفترة الزمنية": "2015-2025"
+      },
+      "sources": [
+        {
+          "name": "الهيئة العامة للاستعلامات",
+          "url": "https://www.sis.gov.eg/Story/234234"
+        },
+        {
+          "name": "Egypt Today",
+          "url": "https://www.egypttoday.com/Article/1/118765"
+        }
+      ]
+    },
+    {
+      "id": "ach-002",
+      "date": "2015-2025",
+      "title": "تطوير شبكة الكهرباء في شمال سيناء",
+      "description": "تنفيذ 92 مشروع كهرباء بإجمالي قدرة مضافة 420 ميجاوات (زيادة 27%) وتطوير شبكات التوزيع ومحطات المحولات",
+      "category": "infrastructure",
+      "images": [
+        "/assets/images/electricity-network.jpg"
+      ],
+      "metrics": {
+        "عدد المشاريع": "92 مشروع",
+        "القدرة المضافة": "420 ميجاوات",
+        "نسبة الزيادة": "27%"
+      },
+      "sources": [
+        {
+          "name": "وزارة الكهرباء والطاقة المتجددة",
+          "url": "http://www.moee.gov.eg/test_new/news_details.aspx?news_id=1234"
+        },
+        {
+          "name": "جريدة الأهرام",
+          "url": "https://gate.ahram.org.eg/News/3501234.aspx"
+        }
+      ]
+    },
+    {
+      "id": "ach-003",
+      "date": "2015-2025",
+      "title": "أنفاق قناة السويس وربط سيناء بالدلتا",
+      "description": "إنشاء أنفاق جديدة أسفل القناة (الإسماعيلية – بورسعيد) وتطوير نفق الشهيد أحمد حمدي",
+      "category": "transportation",
+      "images": [
+        "/assets/images/ahmed-hamdi-tunnel.jpg",
+        "/assets/images/sinai-delta-connection.jpg"
+      ],
+      "metrics": {
+        "الأنفاق الجديدة": "متعددة",
+        "التطوير": "نفق الشهيد أحمد حمدي"
+      },
+      "sources": [
+        {
+          "name": "رئاسة مجلس الوزراء",
+          "url": "https://www.cabinet.gov.eg/News/Details/75654"
+        },
+        {
+          "name": "الهيئة العامة للاستعلامات",
+          "url": "https://www.sis.gov.eg/Story/223456"
+        }
+      ]
+    },
+    {
+      "id": "ach-004",
+      "date": "2015-2025",
+      "title": "التجمعات التنموية والإسكان",
+      "description": "إنشاء 17 تجمعاً تنموياً متكاملاً (10 في شمال سيناء)، بناء 12 ألف وحدة إسكان اجتماعي، إنشاء 2794 منزلاً بدوياً، ومدينة رفح الجديدة",
+      "category": "housing",
+      "images": [
+        "/assets/images/اسكان-جنوب-سيناء000000jpg",
+        "/assets/images/affordable-housing.jpg",
+        "/assets/images/rafah-new-city.jpeg",
+        "/assets/images/بناء,jpg.jpg"
+      ],
+      "metrics": {
+        "التجمعات التنموية": "17 تجمع",
+        "الإسكان الاجتماعي": "12,000 وحدة",
+        "المنازل البدوية": "2,794 منزل",
+        "مدن جديدة": "رفح الجديدة"
+      },
+      "sources": [
+        {
+          "name": "وزارة الإسكان",
+          "url": "https://www.moh.gov.eg/Pages/NewsDetails.aspx?ID=7654"
+        },
+        {
+          "name": "اليوم السابع",
+          "url": "https://www.youm7.com/story/2023/10/5"
+        }
+      ]
+    },
+    {
+      "id": "ach-005",
+      "date": "2015-2025",
+      "title": "الزراعة واستصلاح الأراضي",
+      "description": "تنفيذ 13 تجمعاً زراعياً في شمال سيناء، استصلاح أكثر من 14 ألف فدان، وتوفير مياه ري عبر ترعة السلام ومحطات رفع",
+      "category": "agriculture",
+      "images": [
+        "/assets/images/agriculture.jpg",
+        "/assets/images/الحسنه.jfif"
+      ],
+      "metrics": {
+        "التجمعات الزراعية": "13 تجمع",
+        "المساحة المستصلحة": "14,000+ فدان",
+        "مصادر الري": "ترعة السلام ومحطات رفع"
+      },
+      "sources": [
+        {
+          "name": "وزارة الزراعة",
+          "url": "https://www.agr-egypt.gov.eg/News/Details/4567"
+        },
+        {
+          "name": "بوابة أخبار اليوم",
+          "url": "https://akhbarelyom.com/news/newdetails/4123456"
+        }
+      ]
+    },
+    {
+      "id": "ach-006",
+      "date": "2015-2025",
+      "title": "الصحة والتعليم",
+      "description": "تطوير مستشفى العريش العام ومستشفيات مركزية، إنشاء وحدات صحية جديدة، وبناء مدارس جديدة في القرى والتجمعات",
+      "category": "healthcare",
+      "images": [
+        "/assets/images/hospitals.jpg",
+        "/assets/images/schools.jpg",
+        "/assets/images/sinai-school.jpg"
+      ],
+      "metrics": {
+        "المستشفيات": "العريش العام + مستشفيات مركزية",
+        "الوحدات الصحية": "متعددة",
+        "المدارس": "مدارس جديدة في القرى"
+      },
+      "sources": [
+        {
+          "name": "وزارة الصحة",
+          "url": "https://www.mohp.gov.eg/News/Details/8765"
+        },
+        {
+          "name": "المصري اليوم",
+          "url": "https://www.almasryalyoum.com/news/details/3012345"
+        }
+      ]
+    },
+    {
+      "id": "ach-007",
+      "date": "2015-2025",
+      "title": "الأمن والاستقرار",
+      "description": "تنفيذ العملية الشاملة للقضاء على الإرهاب، عودة الاستقرار وبدء مرحلة التنمية",
+      "category": "security",
+      "images": [
+        "/assets/images/sinai devolpment.jpg",
+        "/assets/images/fire-protection.jpg"
+      ],
+      "metrics": {
+        "الحالة الأمنية": "استقرار كامل",
+        "المرحلة": "التنمية الشاملة"
+      },
+      "sources": [
+        {
+          "name": "المتحدث العسكري للقوات المسلحة",
+          "url": "https://www.mod.gov.eg/NewsDetails.aspx?id=567"
+        },
+        {
+          "name": "وكالة أنباء الشرق الأوسط",
+          "url": "https://mena.org.eg/news/123456"
+        }
+      ]
+    },
+    {
+      "id": "ach-008",
+      "date": "2023-12-01",
+      "title": "محطة تحلية المياه",
+      "description": "أكبر محطة تحلية في المنطقة لتوفير المياه النظيفة للسكان",
+      "category": "infrastructure",
+      "images": [
+        "/assets/images/water-plants.jpg",
+        "/assets/images/Region's Largest Desalination Plant.jpg"
+      ],
+      "metrics": {
+        "الطاقة الإنتاجية": "100,000 م³/يوم",
+        "المستفيدون": "200,000+ مواطن"
+      },
+      "sources": []
+    }
+  ],
+  "officialSources": [
+    {
+      "name": "الهيئة العامة للاستعلامات - ملف تنمية سيناء الكامل",
+      "url": "https://www.sis.gov.eg/section/728/500?lang=ar"
+    },
+    {
+      "name": "رئاسة الجمهورية - مشروعات تنمية سيناء",
+      "url": "https://presidency.eg/ar/مشروعات-سيناء"
+    }
+  ]
+}

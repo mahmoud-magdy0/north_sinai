@@ -1,0 +1,19 @@
+{
+  "siteName": "عرض إنجازات شمال سيناء",
+  "defaultLanguage": "ar",
+  "mapCenter": {
+    "lat": 30.2824,
+    "lng": 33.6176
+  },
+  "mapZoom": 9,
+  "performance": {
+    "lazyLoadThreshold": 0.01,
+    "lazyLoadRootMargin": "50px",
+    "searchDebounceMs": 300,
+    "imageQuality": 85
+  },
+  "contact": {
+    "email": "info@northsinai.gov.eg",
+    "phone": "+20 xxx xxx xxxx"
+  }
+}
