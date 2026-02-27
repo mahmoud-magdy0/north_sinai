@@ -1,0 +1,193 @@
+/* Page-specific styles */
+
+/* Achievement Detail */
+.achievement-detail {
+    text-align: center;
+}
+
+.achievement-detail time {
+    display: block;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+.achievement-detail h2 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.achievement-detail img {
+    width: 100%;
+    max-width: 600px;
+    margin: var(--spacing-lg) auto;
+    border-radius: var(--radius-lg);
+}
+
+/* Multiple Images Gallery */
+.achievement-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.achievement-images img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.achievement-images img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Single image in gallery */
+.achievement-images:has(img:only-child) {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.achievement-images:has(img:only-child) img {
+    height: auto;
+    max-height: 400px;
+}
+
+/* Achievement Sources */
+.achievement-sources {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background-color: var(--color-background-alt);
+    border-radius: var(--radius-md);
+    text-align: right;
+}
+
+.achievement-sources h3 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+.achievement-sources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievement-sources li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.achievement-sources a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    transition: color var(--transition-fast);
+}
+
+.achievement-sources a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.achievement-sources a::before {
+    content: "🔗";
+    font-size: 0.9em;
+}
+
+.achievement-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.achievement-metrics__item {
+    padding: var(--spacing-md);
+    background-color: var(--color-background-alt);
+    border-radius: var(--radius-md);
+}
+
+.achievement-metrics__item dt {
+    font-weight: 600;
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-xs);
+}
+
+.achievement-metrics__item dd {
+    font-size: var(--font-size-large);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Search Results */
+.search-results__empty {
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.search-results__empty ul {
+    list-style: none;
+    margin-top: var(--spacing-lg);
+}
+
+.search-results__empty li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.search-results__header {
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--spacing-md);
+}
+
+.search-results__list {
+    list-style: none;
+}
+
+.search-result {
+    margin-bottom: var(--spacing-md);
+}
+
+.search-result__link {
+    display: block;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast);
+}
+
+.search-result__link:hover {
+    background-color: var(--color-background-alt);
+}
+
+.search-result__type {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--color-secondary);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-sm);
+}
+
+.search-result__title {
+    margin-bottom: var(--spacing-sm);
+}
+
+.search-result__snippet {
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+}
+
+.search-result__snippet mark {
+    background-color: var(--color-accent);
+    padding: 2px 4px;
+    border-radius: var(--radius-sm);
+}
